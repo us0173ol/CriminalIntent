@@ -70,9 +70,9 @@ public class CrimeListFragment extends Fragment {
             mSolvedCheckBox = (CheckBox)
                     itemView.findViewById(R.id.list_item_crime_solved_check_box);
         }
-        @Override//launch crimeactivity on click of crime items
+        @Override//launch crime pager activity on click of crime items
         public void onClick(View v){
-            Intent intent = CrimeActivity.newIntent(getActivity(), mCrime.getId());
+            Intent intent = CrimePagerActivity.newIntent(getActivity(), mCrime.getId());
             startActivity(intent);
         }
 
